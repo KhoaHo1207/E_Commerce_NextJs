@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Unbounded:wght@200..900&display=swap");
+@import "tailwindcss";
+
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "remixicon/fonts/remixicon.css";
+
+:root {
+  --prim-color: "#4B70F5";
+  --prim-light: "#a9baf989";
+
+  --white-color: "#fff";
+  --black-color: "#000";
+
+  --Unbounded: "Unbounded", sans-serif;
+  --Marienda: "Merienda", cursive;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.Unbounded {
+  font-family: var(--Unbounded);
+}
+
+.Marienda {
+  font-family: var(--Marienda);
+}
