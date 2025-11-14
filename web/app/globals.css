@@ -5,14 +5,17 @@
 @import "remixicon/fonts/remixicon.css";
 
 :root {
-  --prim-color: "#4B70F5";
-  --prim-light: "#a9baf989";
+  --prim-color: #4b70f5;
+  --prim-light: #a9baf989;
 
-  --white-color: "#fff";
-  --black-color: "#000";
+  --white-color: #fff;
+  --black-color: #000;
 
   --Unbounded: "Unbounded", sans-serif;
   --Marienda: "Merienda", cursive;
+
+  --transition-regular: 0.3s;
+  --transition-slow: 0.6s;
 }
 
 * {
@@ -25,4 +28,34 @@
 
 .Marienda {
   font-family: var(--Marienda);
+}
+
+/* Navbar */
+.menu-link a {
+  font-weight: 600;
+  transition: var(--transition-regular);
+}
+
+.menu-link a:hover {
+  color: var(--prim-color);
+}
+
+.fixed-nav {
+  animation: Anim-fixed var(--transition-slow) forwards linear;
+  box-shadow: 0 2px 10px rgba(131, 131, 131, 0.6);
+}
+
+.fixed-nav .nav {
+  padding: 25px 20px !important;
+}
+
+@keyframes Ainim-fixed {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
